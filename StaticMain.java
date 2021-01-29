@@ -5,5 +5,8 @@ public class StaticMain {
         Static member3 = new Static("stupic", "Fox");
         Static member4 = new Static("Noel", "FoxxS");
 
+        System.out.println(Static.getMembers());
+
+
     }
 }
