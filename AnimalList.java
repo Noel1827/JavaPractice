@@ -5,7 +5,7 @@ public class AnimalList {
         public void add(Animal d) {
             if (i < thelist.length) {
                 thelist[i]=d;
-                System.out.println("Dog added at index "+i);
+                System.out.println("Animal added at index "+i);
                 i++;
             }
         }
