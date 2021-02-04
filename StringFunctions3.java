@@ -6,6 +6,7 @@ public class StringFunctions3 {
         String a = "Bacon";
         String b = "monster";
 
-        System.out.println(a.concat(b));
+        // System.out.println(a.concat(b));
+        System.out.println(a.replace('B','F'));
     }
 }
