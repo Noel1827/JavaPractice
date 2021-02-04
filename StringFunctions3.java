@@ -7,6 +7,7 @@ public class StringFunctions3 {
         String b = "monster";
 
         // System.out.println(a.concat(b));
-        System.out.println(a.replace('B','F'));
+        // System.out.println(a.replace('B','F'));
+        System.out.println(b.toUpperCase());
     }
 }
