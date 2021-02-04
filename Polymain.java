@@ -1,10 +1,14 @@
 public class Polymain {
     public static void main(String []args){
-      AnimalList list= new AnimalList();
-      Fish f = new Fish();
-      Dog d = new Dog();
-      list.add(f);
-      list.add(d);
+     
+        Animal[] thelist = new Animal[2];
+        Dog d = new Dog();
+        Fish f = new Fish();
+
+        thelist[0]=d;
+        thelist[1]=f;
+        for(Animal x:thelist)
+        x.noise();
 
     }
 }
