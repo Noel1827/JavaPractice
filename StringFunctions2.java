@@ -11,7 +11,7 @@ public class StringFunctions2 {
         // ends with
         for(String w:words){
             if(w.endsWith("nk"))
-            System.out.println(w + "ends with nk ");
+            System.out.println(w + " ends with nk ");
         }
     }
 }
