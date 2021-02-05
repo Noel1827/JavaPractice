@@ -27,4 +27,12 @@ public class Collections {
             System.out.printf("%s ", list1.get(i));
         }
     }
+    public static void editlist(Collection<String> l1, Collection<String> l2){
+        Iterator<String> it = l1.iterator();
+        while(it.hasNext()){
+            if(l2.contains(it.next())){
+                it.remove();
+            }
+        }
+    }
 }
