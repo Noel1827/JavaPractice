@@ -22,4 +22,15 @@ public class LinkedListt {
             reverseMe(list1);
 
     }
+
+    //printMe method
+    private static void printMe(List<String> l){
+        for(String x:l)
+        System.out.printf("%s ",x);
+        System.out.println();
+    }
+
+    private static void removeStuff(List<String> l,int from, int to ){
+        l.subList(from, to).clear();
+    }
 }
