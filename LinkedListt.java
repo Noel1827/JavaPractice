@@ -55,7 +55,7 @@ public class LinkedListt {
         list2 = null;
 
         printMe(list1);
-        removestuff(list1,3,4);
+        removestuff(list1,2,4);
         printMe(list1);
         reverseMe(list1);
 
@@ -67,5 +67,14 @@ public class LinkedListt {
         System.out.println();
     }
 
-    private static void removestuff()
+    private static void removestuff(List<String> l, int from, int to){
+        l.subList(from, to);
+    }
+
+    private static void reverseMe(List<String> l){
+       ListIterator<String> it = l.listIterator(l.size());
+        while(it.hasPrevious()){
+            System.out.printf("%s ", it.previous());
+        }
+    }
 }
