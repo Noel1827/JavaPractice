@@ -24,9 +24,7 @@ vector<vector<int>> threeSum(vector<int> &nums)
             }
         }
     }
-//   for(int i = 0; i < ArrVec.size(); i++){
-//       for(int i = 0; i < )
-//   }
+
 }
 int main()
 {

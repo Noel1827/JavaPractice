@@ -1,23 +1,23 @@
+import java.util.*;
+
 public class TwoSum {
-    
-    public static void main(String args[]){
-        
+
+    public static void main(String args[]) {
+        int arr[] = {-1,-2,-3,-4,-5};
+        int target = -8;
+        twoSum(arr,target);
     }
+
     public static int[] twoSum(int[] nums, int target) {
-        int sum, index1=0, index2=0;
-        int[] ret = new int[2];
-        for(int i = 0; i < nums.length; i++){
-            for(int j = i; j < nums.length-1; j++){
-                sum = nums[i] + nums[j+1];
-                if(sum == target){
-                    index1 = i; index2 = j+1;
-                    break;
-                }
+        Map<Integer, Integer> num_map = new HashMap<Integer, Integer>();
+        for (int i = 0; i < nums.length; i++) {
+            int complement = target - nums[i];
+            if (num_map.containsKey(complement)) {
+                return new int[] { num_map.get(complement), i };
             }
+            num_map.put(nums[i], i);
+
         }
-        ret[0] = index1;
-        ret[1] = index2;
- 
-        return ret;
+        throw new IllegalArgumentException("no match found!");
     }
 }
